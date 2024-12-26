@@ -33,6 +33,56 @@
     <link href="css/responsive.css" rel="stylesheet" />
   </head>
 
+  <style>
+    /* Ensure buttons/tiles are white by default */
+    .service-category .box {
+      background-color: white;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Add hover zoom effect */
+    .service-category .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Maintain the visual consistency for the text */
+    .service-category .detail-box h5,
+    .service-category .detail-box p {
+      color: #000; /* Ensure text remains readable */
+    }
+  
+    .book-now-btn {
+      background-color: white; /* Button matches the tile */
+      color: #007bff; /* Button text is distinct */
+      border: 1px solid #007bff;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .book-now-btn:hover {
+      background-color: #007bff;
+      color: white;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    <style>
+  /* Set the background color of the entire page to white */
+  body {
+    background-color: white;
+    color: #000; /* Ensure text is readable on white */
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
+  }
+
+  </style>
+  
+
   <body>
     <div class="hero_area">
       <!-- header section strats -->
@@ -93,66 +143,238 @@
         </div>
       </header>
       <!-- end header section -->
-    </div>
-
-    <!-- service section -->
-
-    <section class="service_section layout_padding">
-      <div class="container">
-        <div class="heading_container heading_center">
-          <h2>Our Services</h2>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s1.png" alt="" />
+      <section class="service_section layout_padding">
+        <div class="container">
+          <div class="heading_container heading_center">
+            <h2>Our Services</h2>
+          </div>
+      
+          <!-- Water Tank Cleaning -->
+          <div class="service-category">
+            <h3>Water Tank Cleaning</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/water_tank_ug.png" alt="Underground Tank" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>Underground Tank (500-1000 Gallons)</h5>
+                    <p>850 AED</p>
+                    <a
+                      href="contact.html?service=Underground%20Tank%20(500-1000%20Gallons)"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
               </div>
-              <div class="detail-box">
-                <h5>Maintenance</h5>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum is
-                  that it has a more-or-less normal
-                </p>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/water_tank_roof.png" alt="Roof Tank" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>Roof Tank (1000 Gallons)</h5>
+                    <p>999 AED</p>
+                    <a
+                      href="contact.html?service=Roof%20Tank%20(1000%20Gallons)"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/water_tank_outdoor.png" alt="Outdoor Tank" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>Outdoor Tank (500 Gallons)</h5>
+                    <p>499 AED</p>
+                    <a
+                      href="contact.html?service=Outdoor%20Tank%20(500%20Gallons)"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <a href="water_tank_cleaning.html">View More</a>
+            </div>
+          </div>
+      
+          <!-- AC Servicing -->
+          <div class="service-category">
+            <h3>AC Servicing</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/ac_split.png" alt="Split AC Servicing" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>Split AC Servicing</h5>
+                    <p>149 AED/unit</p>
+                    <a
+                      href="contact.html?service=Split%20AC%20Servicing"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/ac_central.png" alt="Central AC Servicing" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>Central AC Servicing</h5>
+                    <p>499 AED/unit</p>
+                    <a
+                      href="contact.html?service=Central%20AC%20Servicing"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/ac_filter.png" alt="AC Filter Cleaning" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>AC Filter Cleaning</h5>
+                    <p>170 AED</p>
+                    <a
+                      href="contact.html?service=AC%20Filter%20Cleaning"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <a href="ac_services.html">View More</a>
+            </div>
+          </div>
+      
+          <!-- Painting -->
+          <div class="service-category">
+            <h3>Painting</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/painting_1br.png" alt="1 Bedroom Painting" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>1 Bedroom Painting</h5>
+                    <p>749 AED</p>
+                    <a
+                      href="contact.html?service=1%20Bedroom%20Painting"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/painting_2br.png" alt="2 Bedroom Painting" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>2 Bedroom Painting</h5>
+                    <p>1200 AED</p>
+                    <a
+                      href="contact.html?service=2%20Bedroom%20Painting"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/painting_3br.png" alt="3 Bedroom Painting" />
+                  </div>
+                  <div class="detail-box">
+                    <h5>3 Bedroom Painting</h5>
+                    <p>1500 AED</p>
+                    <a
+                      href="contact.html?service=3%20Bedroom%20Painting"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <a href="painting_services.html">View More</a>
+            </div>
+          </div>
+      
+          <!-- Other Services -->
+          <div class="service-category">
+            <h3>Other Services</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img
+                      src="images/electrical_service.png"
+                      alt="Electrical Service"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5>Electrical Work</h5>
+                    <p>100 AED/hour</p>
+                    <a
+                      href="contact.html?service=Electrical%20Work"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img
+                      src="images/plumbing_general.png"
+                      alt="General Plumbing"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5>General Plumbing</h5>
+                    <p>100 AED/hour</p>
+                    <a
+                      href="contact.html?service=General%20Plumbing"
+                      class="book-now-btn"
+                    >Order Now</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s2.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Electrical</h5>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum is
-                  that it has a more-or-less normal
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 mx-auto">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s3.png" alt="" />
-              </div>
-              <div class="detail-box">
-                <h5>Plumbing</h5>
-                <p>
-                  when looking at its layout. The point of using Lorem Ipsum is
-                  that it has a more-or-less normal
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div class="btn-box">
-          <a href=""> View More </a>
-        </div>
-      </div>
-    </section>
+      </section>
+      
 
-    <!-- end service section -->
+    <script>
+      document.querySelectorAll(".book-now-btn").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const service = event.target.getAttribute("data-service");
+          document.querySelector("#service").value = service;
+
+          // Smooth scroll to the contact form section
+          document
+            .querySelector("#contact-form")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+
+    <!--end of service section-->
 
     <!-- info section -->
     <section class="info_section">
